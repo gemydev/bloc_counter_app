@@ -5,9 +5,6 @@ class CounterBloc extends Bloc<CounterEvent, int> {
   CounterBloc(int initialState) : super(initialState);
 
   @override
-  int get initialState => 0;
-
-  @override
   Stream<int> mapEventToState(CounterEvent event) async* {
     switch (event) {
       case CounterEvent.increment:
